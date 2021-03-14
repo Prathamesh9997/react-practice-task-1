@@ -3,14 +3,13 @@ import Card from "./Card";
 
 function App() {
   return (
-    <section class="pricing py-5">
+    <section className="pricing py-5">
       <div className="container">
         <div className="row">
           {data.map((item) => {
             return (
-              <div className="col-lg-4">
+              <div className="col-lg-4" key={item.id}>
                 <Card
-                  key={item.id}
                   title={item.title}
                   price={item.price}
                   users={item.users}
